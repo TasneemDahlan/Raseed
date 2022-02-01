@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link href="../css/bootstrap.min.css" rel="stylesheet"  type="text/css">
+      <link href="../css/rating-widget.css" rel="stylesheet">
+      <link href='../css/font-awesome.css'  rel="stylesheet"  type="text/css">
+      <link href="../css/owl.carousel.css"  rel="stylesheet"  type="text/css" />
+<!--       <link href="../css/bootstrap-select.min.css" rel="stylesheet">
+ -->      <link href="../css/custom.css"        rel="stylesheet"  type="text/css" >
+
+
+      <title>Raseed</title>
+      
+  </head>
+  <body>
+     <!-- Modal -->
+      <div class="modal fade" id="confiremPay" tabindex="-1" role="dialog" aria-labelledby="confiremPayLabel" aria-hidden="true">
+          <div class="modal-dialog " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title"></h4>    
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+              <div class="modal-body">
+                <div class="col-12 mx-auto">
+                  <h5> أدخل تقييمك للبطاقة</h5>
+                </div>
+                <div class="col-12">
+                    <form id="" method="post" action="" role="form">
+                        <div class="form-group">
+                          <input  type="text" name="" class="form-control" placeholder="  محمد أحمد" required="required">
+                        </div>
+                         <div class="form-group email">
+                          <input  type="text" name="" class="form-control" placeholder=" أضف تعليق " required="required">
+                        </div>
+                        
+                          <div class="rating">
+                              <div class="css-rating-widget ">
+                                  <div class="uit-rating">
+                                      <input type="radio" id="star-p1" name="nonechecked" value="5">
+                                      <label class="sta-full" for="star-p1"><span>Awesome</span></label>
+                                      <input type="radio" id="star-p2" name="nonechecked" value="4">
+                                      <label class="sta-full" for="star-p2"><span>Exellent</span></label>
+                                      <input type="radio" id="star-p3" name="nonechecked" value="3">
+                                      <label class="sta-full" for="star-p3"><span>Good</span></label>
+                                      <input type="radio" id="star-p4" name="nonechecked" value="2">
+                                      <label class="sta-full" for="star-p4"><span>Fair</span></label>
+                                      <input type="radio" id="star-p5" name="nonechecked" value="1">
+                                      <label class="sta-full" for="star-p5"><span>Poor</span></label>
+                                  </div>
+                              </div> 
+                          </div>
+                         
+                        <div class="col-12 enter_rate">
+                          <button class="btn btn-success btn_st btn_black btn_anim contact__open">
+                            إرسال <span class="effect"></span><span class="effect"></span><span class="effect"></span><span class="effect"></span>
+                          </button>
+                        </div>
+                    </form>
+                </div><!--row-->
+              </div>
+            </div>
+          </div>
+      </div>
+     
+    
+    <div class="container-fluid">
+         <!-- start header -->
+        <header>
+            <!-- Start Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0 main-nav nav-style">
+              <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav">
+                          <li class="nav-item pl-4 dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false" ><i class="fa fa-bars" aria-hidden="true"></i>الرئيسية</a>
+                              <div class="dropdown-menu dropdown-multicol2" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-col"> 
+                                  <h6>رصيد</h6>
+                                  <a class="dropdown-item" href="#"> عن رصيد </a>
+                                  <a class="dropdown-item" href="#">مميزاتنا</a>
+                                  <a class="dropdown-item" href="#">سياسة الاستخدام</a>
+                                  <a class="dropdown-item" href="#"> مركز الدعم</a>
+                                  <a class="dropdown-item" href="#">مدونة</a>
+                                  <a class="dropdown-item" href="#">آليات الدفع </a>
+                                </div>
+                                <div class="dropdown-col"> 
+                                  <h6> البطاقات </h6>
+                                  <a class="dropdown-item" href="#">موصى بها</a>
+                                  <a class="dropdown-item" href="#">بطاقات صوتية</a>
+                                  <a class="dropdown-item" href="#">بطاقات إنترنت</a>
+                                  <a class="dropdown-item" href="#"> بطاقات ألعاب</a>
+                                  <a class="dropdown-item" href="#">بطاقات ستور</a>
+                                  <a class="dropdown-item" href="#">بطاقات موسيقى</a>
+                                  <a class="dropdown-item" href="#">بطاقات أفلام</a>
+                                  <a class="dropdown-item" href="#">بطاقات شرائية</a>
+                                </div>
+                                <div class="dropdown-col"> 
+                                  <h6> مزودينا </h6>
+                                  <a class="dropdown-item" href="#">STC</a>
+                                  <a class="dropdown-item" href="#">موبايلي</a>
+                                  <a class="dropdown-item" href="#">LEBARA</a>
+                                  <a class="dropdown-item" href="#">زين</a>
+                                </div>
+                                <div class="dropdown-col"> 
+                                  <h6> الموزعين </h6>
+                                  <a class="dropdown-item" href="#"></a>
+                                  <a class="dropdown-item" href="#"></a>
+                                  <a class="dropdown-item" href="#"></a>
+                                  <a class="dropdown-item" href="#"></a>
+                                </div>
+                                 <div class="dropdown-col"> 
+                                  <h6> أراؤكم</h6>
+                                  <a class="dropdown-item" href="#">أراء العملاء</a>
+                                  <a class="dropdown-item" href="#">تقييمك لنا</a>
+                                 </div>
+                            </div>
+                         </li>
+
+                          <li class="nav-item pl-3">
+                            <a class="nav-link" href="#"> <i class="fa fa-shopping-cart"></i> السلة    </a>
+                          </li>
+                          <li class="nav-item pl-3">
+                            <a class="nav-link" href="#">
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+                            تواصل معنا</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> 
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                                حسابي 
+                              </a></li>
+                          <li class="nav-item"><a class="nav-link notification"><i class="fa fa-bell-o" aria-hidden="true"></i>    </a><span class="badge badge-light">9</span></li>
+                       </ul>
+                  </div><!-- navbar-collapse-->
+
+                  <a class="navbar-brand" href="#index"><img src="../images/logo.png"  alt=""></a>
+
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  
+              </div><!--container-->
+            </nav>
+            <!-- End Navbar -->
+        </header>
+        <!-- End header-->
+
+        <div class="container">
+            <section class="cart mt-5 pt-5">
+               <div class="col-12">
+                  <ul class="nav nav-pills nav-justified">
+                    <li><a href="#cart"         data-toggle="tab"  class="nav-item nav-link active"> <i class="fa fa-shopping-cart"></i> سلة التسوق </a></li>
+                    <li><a href="#personalInfo" data-toggle="tab"  class="nav-item nav-link "> <i class="fa fa-user" aria-hidden="true"></i> البيانات الشخصية</a></li>
+                    <li><a href="#payment" data-toggle="tab"  class="nav-item nav-link "><i class="fa fa-credit-card" aria-hidden="true"></i>
+                    عملية الدفع</a></li>
+                  </ul>
+               </div>
+               <div class="col-12">
+                  <div class="tab-content">
+                      <div class="tab-pane fade active show" id="cart">
+                        <div class="col-12">
+                          <div class="row">
+                            <div class="col-lg-8 col-12">
+                                  <table class="table ">
+                                      <thead>
+                                          <tr><!-- 
+                                              <th> &nbsp; &nbsp;</th> -->
+                                              <th width="50%">البطاقة </th>
+                                              <th>السعر </th>
+                                              <th class="text-center">الكمية</th>
+                                              <th width="17%"> المجموع الفرعي </th>
+                                           </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                             <!-- <td>
+                                                 <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-times"></i></a>
+                                              </td> -->
+                                              <td>
+                                                 <a class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-times"></i></a>
+                                                <div class="cardimg">
+                                                  <img src="../images/card1.png">
+                                                </div>
+                                                <span class="cardtitle"> بطاقة أيتونز , 3 شهور </span>
+                                              </td>
+                                              <td>250 ريال </td>
+                                              <td class="counter">
+                                                <div class="price_counter">
+                                                    <div class="input-group inline-group">
+                                                        <div class="input-group-prepend">
+                                                          <button class="btn btn-outline-secondary btn-minus border2">
+                                                            <i class="fa fa-minus"></i>
+                                                          </button>
+                                                        </div>
+                                                        <input class="form-control quantity" min="0" name="quantity" value="1" type="number">
+                                                        <div class="input-group-append">
+                                                          <button class="btn btn-outline-secondary btn-plus border1">
+                                                            <i class="fa fa-plus"></i>
+                                                          </button>
+                                                        </div>
+                                                      </div>
+                                                 </div>
+                                              </td>
+                                              <td> 250 ريال</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                            </div>
+                            <div class="col-lg-4 col-12 cartinfo">
+                              <h4> مجموع السلة</h4>
+                              <div class="tt">
+                                <span> المجموع </span>
+                                <span> 250 ريال</span>
+                              </div>
+                              <div class="row">
+                                <button class="btn btn-success"> الإنتقال الى البيانات الشخصية </button>
+                              </div>
+                              <div class="row mt-2 mr-0">
+                                <h6> 
+                                  <i class="fa fa-tag"></i>
+                                  كوبون الخصم
+                                 </h6>
+                                 <input type="text" class="form-control" placeholder="كود الكوبون">
+                              </div>
+                              <div class="row">
+                                <button class="btn btn-success"> إرسال الكوبون  </button>
+                                <button class="btn btn-success"> التالي   </button>
+                              </div>
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="personalInfo">
+                        <form class="personalInfo">
+                          <div class="form-group row">
+                            <label for="" class="col-sm-1 col-form-label">الاسم </label>
+                            <div class="col-sm-10">
+                              <input type="text"  class="form-control" id="" value="">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="" class="col-sm-1 col-form-label">الدولة </label>
+                            <div class="col-sm-10">
+                               <select class="form-control  countrypicker" data-live-search="true" data-default="Saudi Arabia" data-flag="true">
+                                  <option> Facebook </option>
+                                  <option>Twitter </option>
+                                  <option>Email</option>
+                                  <option>Website</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="" class="col-sm-1 col-form-label">رقم الجوال </label>
+                            <div class="col-sm-10">
+                              <input type="text"  class="form-control" id="" value="0599887761">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="" class="col-sm-1 col-form-label">الإيميل </label>
+                            <div class="col-sm-10">
+                              <input type="text"  class="form-control" id="" value="">
+                            </div>
+                          </div>
+                          <span class="float-right"> بالانتقال إلى الدفع فأنت توافق على سياسة الإستخدام وسياسة الخصوصية لـ   <a href="#"> تطبيق رصيد</a> </span>
+                           <div class="clear"></div>
+                          <div class="col-12 text-center btndiv">
+                            <button class="btn  btn-success"> التوجه للدفع</button>
+                          </div>
+                           
+                           
+                        </form>
+                      </div>
+                     
+                      <div class="tab-pane fade" id="payment">
+                        <div class="container-fluid">
+                          <div class="row justify-content-center payment">
+                              <div class=" col-lg-6 col-md-8">
+                                  <div class="card p-3">
+                                     
+                                      <form class="form-card">
+                                          <div class="row justify-content-center mb-4 radio-group">
+                                              <div class="col-sm-3 col-5">
+                                                  <div class='radio mx-auto' data-value="visa"> <img class="fit-image" src="https://i.imgur.com/OdxcctP.jpg" width="105px" height="55px"> </div>
+                                              </div>
+                                              <div class="col-sm-3 col-5">
+                                                  <div class='radio mx-auto' data-value="master"> <img class="fit-image" src="https://i.imgur.com/WIAP9Ku.jpg" width="105px" height="55px"> </div>
+                                              </div>
+                                               <br>
+                                          </div>
+                                          
+                                          <div class="row justify-content-center">
+                                              <div class="col-12">
+                                                  <div class="input-group"> <input type="text" class="form-control" id="cr_no" name="card-no" placeholder="Card Numbe" minlength="19" maxlength="19"></div>
+                                              </div>
+                                          </div>
+                                          <div class="row justify-content-center">
+                                              <div class="col-12">
+                                                  <div class="row">
+                                                    <div class="col-6">
+                                                          <div class="input-group"> <input type="password"  class="form-control" name="cvv" placeholder="CVV" minlength="3" maxlength="3"> </div>
+                                                      </div>
+                                                      <div class="col-6">
+                                                          <div class="input-group"> <input type="text" class="form-control"  id="exp" name="expdate" placeholder="MM/YY" minlength="5" maxlength="5"> </div>
+                                                      </div>
+                                                      
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="row justify-content-center">
+                                              <div class="col-12">
+                                                  <div class="input-group"> <input type="text" class="form-control" name="Name" placeholder="Name On Card"> </div>
+                                              </div>
+                                          </div>
+                                          <div class="row justify-content-center">
+                                              <div class="col-md-12"> 
+                                                <button type="button" class="btn btn-success" data-toggle="modal"  data-target="#confiremPay">Pay</button> </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+       </div>
+
+       
+
+        <section class="partners cards_games">
+            <h4>
+              دفع آمن
+            </h4>
+            <div class="partners_img row">
+                <div class="col-lg-2 col-sm-4 col-12">
+                  <img src="../images/pay5.png" alt="STCC">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-12">
+                  <img src="../images/pay4.png" alt="MOBILE">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-12">
+                  <img src="../images/pay3.png" alt="LENERA">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-12">
+                   <img src="../images/pay2.png" alt="zain">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-12">
+                   <img src="../images/pay1.png" alt="zain">
+                </div>
+            </div><!--partners_img-->
+        </section>
+
+        
+        <section class="app">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-xs-12 app_img">
+                    <img src="../images/app.png">
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <h3>حمّل تطبيقك الآن</h3>
+                    <div class="stores">
+                        <a href="#"> <img src="../images/appstore.png"></a>
+                        <a href="#"><img src="../images/googleplay.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+   
+        <!-- Footer -->
+        <footer class=" pt-4">
+
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                 <!-- Grid column -->
+                  <div class="col-md-2 mx-auto">
+
+                      <!-- Links -->
+                      <h5 class=" mt-3 mb-4">رصيد</h5>
+
+                      <ul class="list-unstyled">
+                          <li>
+                            <a href="#!">عن رصيد</a>
+                          </li>
+                          <li>
+                            <a href="#!">مميزاتنا</a>
+                          </li>
+                          <li>
+                            <a href="#!">سياسة الاستخدام</a>
+                          </li>
+                          <li>
+                            <a href="#!">مركز الدعم</a>
+                          </li>
+                      </ul>
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-2 mx-auto">
+
+                      <!-- Links -->
+                      <h5 class=" mt-3 mb-4">البطاقات</h5>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#!">موصى بها</a>
+                        </li>
+                        <li>
+                          <a href="#!">بطاقات  صوتية</a>
+                        </li>
+                        <li>
+                          <a href="#!">بطاقات إنترنت</a>
+                        </li>
+                        <li>
+                          <a href="#!">بطاقات ألعاب</a>
+                        </li>
+                      </ul>
+
+                  </div>
+                  <!-- Grid column -->
+                   <hr class="clearfix w-100 d-md-none">
+
+                   <!-- Grid column -->
+                  <div class="col-md-2 mx-auto">
+
+                      <!-- Links -->
+                      <h5 class=" mt-3 mb-4">مزودينا</h5>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                          <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                          <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                          <a href="#!">Link 4</a>
+                        </li>
+                      </ul>
+
+                  </div>
+                  <!-- Grid column -->
+
+                  <div class="col-md-2 mx-auto">
+
+                      <!-- Links -->
+                      <h5 class=" mt-3 mb-4">الموزعين</h5>
+
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                          <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                          <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                          <a href="#!">Link 4</a>
+                        </li>
+                      </ul>
+
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="clearfix w-100 d-md-none">
+
+                  <!-- Grid column -->
+                  <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <img src="../images/white_logo.png">
+                    <form class="form-inline">
+                        <input class="form-control" type="text">
+                        <button class="btn btn-success btn-rounded btn-sm my-0 ml-sm-2" type="submit">Search</button>
+                    </form>
+                    <div class="social-network">
+                        <span>تواصل معنا</span>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                     </div>
+                     <a href="#" class="help">help@raseed.com</a>
+
+
+                  </div>
+                  <!-- Grid column -->
+
+              
+            </div>
+            <!-- Grid row -->
+
+         
+          <hr>
+          
+          <!-- Copyright -->
+           <div class="footer-copyright text-center py-3">جميع الحقول محفوظة لدى رصيد  © 2020 
+                <a href="https://mdbootstrap.com/">raseed.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+           
+    </div>    
+
+        <!-- Optional JavaScript -->
+        <script src="../js/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js" ></script>
+        <script src="../js/bootstrap-select.js"></script>
+        <script src="../js/countrypicker.js"></script>
+         <script src="../js/payment.js"></script>
+        <script src="../js/owl.carousel.js"></script>
+
+        <script type="text/javascript">
+            
+            $(document).ready(function() {
+
+
+
+                 /*------- dropdown hover script ----------*/
+              $('li.dropdown').hover(function() {
+               $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+                }, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+              });
+                       
+          
+                // Delete row on delete button click
+                  $(document).on("click", ".delete", function(){
+                        $(this).parents("tr").remove();
+                    }); 
+                  });
+
+            /* price_counter + - js*/
+                $('.btn-plus, .btn-minus').on('click', function(e) {
+                const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
+                const input = $(e.target).closest('.input-group').find('input');
+                if (input.is('input')) {
+                  input[0][isNegative ? 'stepDown' : 'stepUp']()
+                }
+              })
+
+                   
+      </script>
+  </body>
+</html>
